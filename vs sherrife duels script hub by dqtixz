@@ -1,0 +1,177 @@
+local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
+local window = PabloLib:Create(
+"Projeto LKA I Murderes V3",
+"Enabled",
+"p"
+)
+
+local tab1 = window:CreateTab("Principal")
+local tab2 = window:CreateTab("Mais+")
+local tab3 = window:CreateTab("Extras")
+local tab4 = window:CreateTab("Creditos")
+local tab5 = window:CreateTab("Deletar Menu")
+
+tab1:CreateTextbox("Mudar Sua Volocidade", function(a)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a
+print(a)
+end)
+
+tab1:CreateWarning("Recomendando 18-25")
+tab1:CreateWarning("é")
+tab1:CreateWarning("Recomendando 18-22")
+
+tab1:CreateTextbox("Mudar Seu Pulo", function(a)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
+print(a)
+end)
+
+tab1:CreateWarning("recomendado 70-100")
+
+tab1:CreateButton("Hitbox Pequena", function()
+G.HeadSize = 12
+_G.Disabled = true
+ 
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.5
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+
+tab1:CreateWarning("hitbox pequena boa para disfarçar")
+tab1:CreateWarning("Não Atire Atrais Da Parede")
+tab1:CreateWarning("Atirar Atrais da parede")
+tab1:CreateWarning("Pode Ser Visto Como Hacker")
+tab1:CreateWarning("Ou Caso Quer Xitar Igual Doido")
+
+tab1:CreateButton("Hitbox Medio", function()
+G.HeadSize = 18
+_G.Disabled = true
+ 
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.5
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+
+tab1:CreateWarning("Hitbox Para Disfarça Mais Ou Menos")
+tab1:CreateWarning("Não Atire Jogador Atrais Da Parede")
+tab1:CreateWarning("Isso É Visto Como Exploit")
+tab1:CreateWarning("Ou Caso Não Queira Disfarça ")
+
+tab1:CreateButton("Hitbox Grande", function()
+G.HeadSize = 26
+_G.Disabled = true
+ 
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.5
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+
+tab1:CreateWarning("Muito Facil De Ser Visto Como")
+tab1:CreateWarning("Exploit !")
+
+tab1:CreateButton("Hitbox Gigante", function()
+G.HeadSize = 35
+_G.Disabled = true
+ 
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.5
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+
+tab1:CreateWarning("Muito Facil De Ser Visto Como")
+tab1:CreateWarning("Exploit !")
+tab1:CreateWarning("Xitadin Tu Né kk")
+
+tab5:CreateButton("Deletar Menu", function()
+print(value)
+PabloLib:Close()
+end)
+
+tab5:CreateWarning("Isso ira Fazer Menu Ser Deletado")
+tab5:CreateWarning("Execute Novamente Para Ativar")
+tab5:CreateWarning("Seu Personagem Reniciar")
+tab5:CreateWarning("Auto Deletara O Menu")
+
+--- creditos tab4 ---
+
+tab4:CreateWarning("Criado Por dqtixz")
+tab4:CreateWarning("Murderers Vs Sherrife Duels Script Brasil")
+tab4:CreateWarning("Em Breve Vamos Apostar Nossos script")
+tab4:CreateWarning("No Site Abaixo !")
+tab4:CreateWarning(" https://scriptblox.com/?mode=free ")
+
+tab3:CreateButton("Gravidade Normal", function()
+    print(value)
+wait()
+game.workspace.Gravity = 196.2
+end)
+
+tab3:CreateButton("Gravidade Media", function()
+  print(value)
+wait()
+game.workspace.Gravity = 250
+end)
+
+tab3:CreateButton("Gravidade Alta", function()
+    print(value)
+wait()
+game.workspace.Gravity = 320
+end)
+
+tab3:CreateButton("Auto Equip Arma", function()
+  print(value)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Equip%20Tool'))()
+end)
+
+tab3:CreateWarning("Digite Nome Do Item")
+tab3:CreateWarning("Tipo Knife")
+tab3:CreateWarning("E Deixe Ativado ")
+tab3:CreateWarning("E Aperte Para Desativar")
+tab3:CreateWarning("Quando Quiser")
+tab3:CreateWarning("Nome Items Abaixo Auto Equip")
+tab3:CreateWarning("Knife")
+tab3:CreateWarning("Não temos certeza da arma")
+tab3:CreateWarning("Gun, Pistol, Revolver")
